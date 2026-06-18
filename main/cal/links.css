@@ -1,0 +1,29 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 50px;
+    width: auto;
+    /* background: #3f2e2e; */
+    background-color: #ff0000;
+    position: sticky;
+    padding: 10px;
+    margin: 0%;
+    padding-top: 65%;
+    bottom: 30px;
+}
+.products{
+   display: flex;
+   flex-direction:row;
+}
+.sub-products{
+    display: inline-block;
+    flex-direction: column;
+    margin: 4px 10px;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

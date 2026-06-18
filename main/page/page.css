@@ -1,0 +1,426 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #333;
+    background-repeat: repeat-y;
+    transition: background-image 2s ease-in-out;
+    background-size:125%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    }
+/* --------------------------------------------------------------------------------- */
+      /* sliding imgs */
+
+    /* Set the slideshow container size and center content */
+    .slideshow-container {
+      position: relative;
+      width: 350px;
+      border: 3px double #00000058;
+      border-top: 5px double #f00;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      background-color: #9595958a;
+      padding: 3px;
+      margin: auto;
+      margin-bottom: 20px;
+      overflow: hidden; /* Hide images outside the container */
+    }
+  
+    /* Hide all images by default */
+    .slide {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+    /* Styles for the next/prev buttons */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      padding: 16px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      cursor: pointer;
+      z-index: 1;
+      transition: 0.3s ease;
+    }      
+    .prev {
+      left: 0;
+    }
+    .next {
+      right: 0;
+      }
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Animation for fading effect */
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+  /* Animation for sliding effect */
+    @keyframes slideIn {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(0); }
+    }
+    /* Animation for zoom effect */
+    @keyframes zoomIn {
+      0% { transform: scale(0.5); }
+      100% { transform: scale(1); }
+    }
+    /* Slide transition effects */
+    .fade { animation: fadeIn 2s ease-in-out; }
+    .slide-effect { animation: slideIn 2s ease-in-out; }
+    .zoom { animation: zoomIn 2s ease-in-out; }
+  
+    /* header */
+    .header{
+        margin: 5px 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* Branding */
+    .branding {
+        color: #f44234;
+        font-family:sans-serif;
+        text-align: center;
+        font-size:30px;
+        font-weight: 600;
+        background: #9595958a;
+        -webkit-text-stroke:0.5px black;
+       border: 2px solid #00000058;
+        border-radius:15px;
+        width: 220px;
+        animation: fadeIn 3s ease-in-out forwards;
+        }
+        /* Time Display Styling */
+    .divm {
+        color: #ff1100;
+        font-family:sans-serif;
+        text-align: center;
+        font-size:30px;
+        font-weight: 600;
+        background: #9595958a;
+        -webkit-text-stroke:0.5px black;
+        border:2px solid #00000058;
+        border-radius:15px;
+        width: 220px;
+        animation: fadeIn 3s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    /* Search Box Styling */
+    .search-box{
+        display: flex;
+        border: none;
+        justify-content:center;
+        height: 45px;
+        width: 600px;
+        min-width: 500px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 15px;
+    }
+    .search-box input{
+      border: none;
+        font-size: 20px;
+        color: #000000;
+        width: 100%;
+        align-items: center;
+        background: #ffffff00;
+        outline: none;
+    }
+    /* Drop-Down Button */
+    .dropbtn {
+      border: none;
+      display: flex;
+      align-items: center;
+      background: transparent;
+    }
+    .dropbtn:hover{
+      content: url(assets/menu.svg);
+    }
+    .dropdown {
+      display:flex;
+    }
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      margin-top: -70px;
+      margin-left: 55px;
+      position: absolute;
+      background: #9595958a;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .search-btn img{
+      height: 35px;
+      margin: auto;
+    }
+    .search-btn img:hover{
+      height: 40px;
+      rotate: -10deg;
+      margin-bottom: 5px;
+      margin: auto;
+    }
+    .dropdown-content button {
+      color: black;
+      padding: 0%;
+      text-decoration: none;
+      display: block;
+      background:none;
+      border: none;
+    }
+    .dropdown-content button:hover {
+      background-color: #5b20206b;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown:hover .dropbtn {
+      content: url(assets/menu.svg); 
+      background-color: transparent;
+    }
+    /* Links Drop-Down Button */
+    
+    /* Frequent Links */
+    .links-container {
+      margin: auto;
+      margin-top: 10PX;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      height: 50px;
+    }
+   .links-container button{
+      background: none;
+      border: none;
+      height: 40px;
+      width: 40px;
+      padding-top: 2px;
+      margin: 15px;
+      margin-top:5px;
+    }
+    .links img{
+      border-radius: 15px;
+      height: 50px;
+    }
+    .links img:hover{
+      rotate: 5deg;
+      margin-top: 10px;
+      border-radius: 15px;
+    }
+    .link-btn img{
+      border-radius: 15px;
+      height: 50px;
+    }
+    .link-btn img:hover{
+      margin-top: 10px;
+      border-radius: 15px;
+    }
+    .head3{
+      color: #fff;
+      margin: auto;
+      margin-bottom:5px ;
+      width: 130px;
+    }
+    /* To-Do List Styles */
+    .todo-container {
+    margin: 20px 0;
+    padding: 5px;
+    margin-left:10px;
+    background-color: #9595958a;
+    width: 320px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items:stretch;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 3px solid #00000058;
+    }
+    .send-area{
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      width: 100%;
+      padding: 5px 0;
+      border-bottom: 1px dashed #ccc;
+  }
+  #new-task {
+      outline:none;
+      flex-grow: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      width: 260px;
+      margin-right: 5px;
+  }
+  #new-task:hover{
+      box-shadow: RGB(255,0,0,60)
+  }
+  #add-task-btn{
+      display: flex;
+      height: 30px;
+      width: 30px;
+      align-items: center;
+      justify-content: center;
+      background:#55cf0a;
+      border-radius:100%;
+      cursor: pointer;
+      border:none;
+      rotate: 45deg;
+  }
+  #add-task-btn:hover{
+    rotate:0deg ;
+  }
+    #todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 230px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    }
+    .list-t {
+      display: flex;
+      font-size: medium;
+    }
+    li {
+    background-color: #e1e1e1;
+    margin: 10px 0;
+    margin-top: 20px;
+    padding:5px;
+    width: 260px;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .remove-btn {
+      margin-right: -38px;
+      margin-top: 0px;
+      height: 30px;
+      display: flex;
+      background-color: red;
+      border: none;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+   .remove-btn:hover {
+    content: url(assets/dlt2.svg);
+    background-color: darkred;
+    }
+    /* MRi Chatbot */
+    .mri-btn{
+      display: flex;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      bottom: 10px;
+      right: 10px;
+      height: 55px;
+      width: 55px;
+      background-color: #615b5b66;
+      border: 2px solid #00000058;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 500;    
+      transform: translatey(0px);
+      animation: float 6s ease-in-out infinite;
+    }
+    .mri-btn img{
+      height: 40px;
+    }
+    .mri-btn:hover{
+      background: #7a404065;
+      padding-right: 5px;
+      bottom: 12px;
+    }
+    .mri-btn img:hover{
+      height: 45px;
+      position: relative;
+    }
+    /* icon modul */
+    .ico-btn{
+      display: flex;
+      position: fixed;
+      justify-content: center;
+      padding: 0%;
+      bottom: 10px;
+      right: 70px;
+      height: 55px;
+      width: 55px;
+      background-color: #615b5b66;
+      border: 2px solid #00000058;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 500; 
+      animation: float 6s ease-in-out infinite;
+    }
+    .ico-btn img{
+      height: 50px;
+    }
+    .ico-btn:hover{
+      background: #7a404065;
+      bottom: 12px;
+    }
+    .ico-btn img:hover{
+      position: relative;
+    }
+    /* CAL Button */
+    .cal-btn{
+      display: flex;
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      padding: 0%;
+      bottom: 10px;
+      right: 130px;
+      height: 55px;
+      width: 55px;
+      background-color: #615b5b66;
+      border: 2px solid #00000058;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 500; 
+      animation: float 6s ease-in-out infinite;
+    }
+    .cal-btn img{
+      height: 35px;
+    }
+    .cal-btn:hover{
+      background: #7a404065;
+      bottom: 12px;
+    }
+    .cal-btn img:hover{
+      position: relative;
+    }
+    /* KEYFRAME OF ICO-BTN, MRI-BTN & CAL-BTN */
+    @keyframes float{
+      0%{
+        transform: translatey(0);
+      }
+      50%{
+        transform: translatey(-15%);
+      }
+      100%{
+        transform:translateY(0)
+      }
+    }

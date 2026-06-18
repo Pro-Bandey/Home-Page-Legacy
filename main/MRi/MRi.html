@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRi Ai Assistant</title>
+    <link href="MRi.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="alert-message" id="alert-message">
+        <img src="assets/alert.svg" alt="Alert Icon" style="height: 30px; margin-right: 5px;">
+        <br>
+        <span>No internet connection.<br> Please check your connection. <br> And try again.</span>
+     </div>
+    <div class="alert-message" id="alert-message" style="display: none;">
+        <img src="assets/alert.svg" alt="Alert Icon" style="height: 30px; margin-right: 5px;">
+        <br>
+        <span>No internet connection. Please check your connection.</span>
+     </div>
+    <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be added here -->
+    </div>
+    <div class="send-field">
+        <div>
+            <input type="text" id="user-input" placeholder="Type your message...">
+        </div>
+        <div>
+            <button id="send-button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="currentcolor" viewBox="0 0 24 24" height="24" width="24">
+                    <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="MRi.js"></script>
+</body></html>

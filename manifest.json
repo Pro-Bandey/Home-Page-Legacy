@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "MicoPage",
+  "version": "2025.02",
+  "description": "A custom homepage for Google Chrome, MS Edge, Opera and Mozzila FireFox.",
+  "author": "MainRoute Core",
+  "chrome_url_overrides": {
+  "newtab": "index.html"
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "64": "assets/icon64.png",
+    "128": "assets/icon128.png",
+    "256": "assets/icon.png"
+  }
+}

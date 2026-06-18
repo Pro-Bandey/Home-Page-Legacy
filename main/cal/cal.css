@@ -1,0 +1,69 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 320px;
+    max-width: 320px;
+    width: auto;
+    /* background: #3f2e2e; */
+    background-color: #ffffff00;
+    position: sticky;
+    padding: 10px;
+    margin: 0%;
+    padding-top: 65%;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+}
+.more{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    margin: auto;
+    margin-left:-5px;
+    margin-right: 0%;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    padding-top:5px;
+}
+.more button{
+    display: flex;
+    align-items: center;
+    width:auto;
+    border: none;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    color: aliceblue;
+    background: rgb(198, 198, 198);
+}
+.more button:hover{
+    height: 35px;
+
+}
+.morea{
+    color: #000000;
+    -webkit-text-stroke: 0.3px  #fff;
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.morea:hover{
+    text-decoration:1px rgb(0, 0, 0) underline;
+}
+.products{
+   display: flex;
+   flex-direction:row;
+}
+.sub-products{
+    display: inline-block;
+    flex-direction: column;
+    margin: 4px 10px;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,0 +1,153 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 510px;
+    width: auto;
+    /* background: #3f2e2e; */
+    background-color: #f0f0f000;
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    overflow-x:inherit;
+}
+.alert-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    margin-top: 5px;
+    margin: auto;
+}
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.message-options{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px;
+    margin-bottom: -30px;
+}
+.copy-options{
+    background: #f9f9f9;
+    border-radius: 100px;
+    outline: none;
+    padding: 0px;
+    height: 25px;
+    width: 25px;
+    border: none;
+}
+.message{
+    padding-right: 10px;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 10px;
+    margin: 4px 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    max-width: 65%;
+    /* overflow-x:; */
+}
+
+.user-message{
+    display: flex;
+    background-color: #f7afaf;
+    align-self: flex-end;
+    border-top-right-radius: 0%;
+    margin-top: 30px;
+    text-align: left;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-bottom: 27px;
+}
+.user-message::before {
+    /* Man emoji */
+    /* content: "\1F468";  */
+    content: url(assets/user.png);
+    background: #a79b9ba3;
+    border: 1px double #ffffff;
+    border-radius: 15px;
+    left:100%;
+    font-size: 20px;
+    position: sticky;
+    height: 30px;
+    margin-top: -41px;
+    display: flex;
+    justify-content: flex-end;
+    }
+.bot-message{
+    display: flex;
+    background-color: #e1e1e1;
+    align-self: flex-start;
+    border-top-left-radius: 0%;
+    margin-top: 30px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 27px;
+}
+.bot-message::before{
+     /* robort emoji */
+    /* content: "\1F916"; */
+    content:url(assets/mri.png);
+    background: #a79b9ba3;
+    border: 1px double #ffffff;
+    border-radius: 15px;
+    left: 0;
+    font-size: 20px;
+    position: sticky;
+    height: 30px;
+    margin-top: -41px;
+    display: flex;
+    justify-content:start;
+}
+.send-field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top:5px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    border-top: 1px dashed #ccc;
+}
+
+#user-input {
+    outline:none;
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 260px;
+    margin-right: 5px;
+}
+#user-input:hover{
+    box-shadow: RGB(255,0,0,60)
+}
+#send-button{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#55cf0a;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 5px;
+    color: white;
+    border:none;
+}
+#send-button svg {
+    fill: currentcolor;
+}
+#send-button svg:hover{
+    fill:currentcolor;
+}
+#send-button:hover {
+    background: #153601;
+    color:#767676;
+}

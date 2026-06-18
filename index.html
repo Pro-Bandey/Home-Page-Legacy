@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Own HomePage</title>
+    <link href="main/page/page.css" rel="stylesheet">
+    <link href="main/page/popup.css" rel="stylesheet">
+    <link href="main/page/popup.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+        <!-- Branding -->
+        <div class="branding">
+            MainRoute
+            <br>
+            <span style="color: white;">Core
+
+            </span>
+        </div>
+        <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+        <!-- Large Time Display -->
+        <div class="divm">
+            <div id="time"></div>
+            <div id="date"></div>
+        </div>
+    </div>
+    <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+    <!-- Slidshow images -->
+    <div class="slideshow-container">
+        <!-- Slides (images) -->
+        <img class="slide slide-effect" src="assets/slid (1).png" alt="Image 1" style="display: none;">
+        <img class="slide slide-effect" src="assets/slid (2).png" alt="Image 3" style="display: none;">
+        <img class="slide fade" src="assets/slid (3).png" alt="Image 4" style="display: none;">
+        <img class="slide zoom" src="assets/slid (4).png" alt="Image 6" style="display: none;">
+
+
+    </div>
+    <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+    <!-- Google Search Box -->
+    <div class="search-box">
+        <img class="search-box-svg" src="assets/search.svg" alt="">
+        <input type="text" id="search" class="search" placeholder="Search or type URL">
+
+        <div class="dropdown">
+            <button class="dropbtn"><img src="assets/menu.png" alt="menu" title="Search with"></button>
+            <div class="dropdown-content">
+                <button id="bing-btn" class="search-btn" title="Search With Bing"><img src="assets/bing.png"
+                        alt=""></button>
+                <button id="duckduck-btn" class="search-btn" title="Search With DuckDuckGo"><img
+                        src="assets/DuckDuckGo.png"></button>
+                <button id="google-btn" class="search-btn" title="Search With Google"><img src="assets/google.png"
+                        alt=""></button>
+                <button id="yahoo-btn" class="search-btn" title="Search With Yahoo"><img
+                        src="assets/yahoo.png"></button>
+                <button id="yandex-btn" class="search-btn" title="Search With Yandex"><img
+                        src="assets/yandex.png"></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+    <!-- Favorite Links Section -->
+    <div class="links-container">
+        <button class="links" href="https://www.facebook.com" target="_blank"><img src="assets/Links/FB.png"
+                title="Facebook"></button>
+        <button class="links" href="https://www.instagram.com" target="_blank"><img src="assets/Links/insta.png"
+                title="Instagram"></button>
+        <button class="links" href="https://www.youtube.com" target="_blank"><img src="assets/Links/YT.png"
+                title="YouTube"></button>
+        <button class="links" href="https://www.github.com" target="_blank"><img src="assets/Links/GitHub.png"
+                title="GitHub"></button>
+        <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+        <!-- Link Bar -->
+        <button class="link-btn" id="link-btn"><img src="assets/Links/link.png" alt="Link-Bar"
+                title="More Links...."></button>
+
+        <!-- Overlay -->
+        <div id="link-overlay" class="link-overlay"></div>
+
+        <!-- Popup -->
+        <div id="link-popup" class="link-popup">
+            <div class="products">
+                <div class="sub-products">
+                    <div><a href="https://google.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 48 48" height="48" width="48">
+                                <path
+                                    d="M44.74 20H24v8.5h11.843c-.51 2.75-2.053 5.093-4.39 6.66v5.53h7.125c4.157-3.83 6.547-9.495 6.547-16.19 0-1.56-.133-3.063-.385-4.5z"
+                                    fill="#4285F4"></path>
+                                <path
+                                    d="M31.455 35.16c-1.967 1.32-4.497 2.09-7.455 2.09-5.725 0-10.582-3.862-12.318-9.067H4.34v5.697C7.96 41.07 15.403 46 24 46c5.938 0 10.938-1.95 14.58-5.31l-7.125-5.53z"
+                                    fill="#34A853"></path>
+                                <path
+                                    d="M11 24c0-1.455.242-2.863.682-4.183v-5.7H4.34A21.929 21.929 0 0 0 2 24c0 3.555.845 6.91 2.34 9.883l7.342-5.698A13.24 13.24 0 0 1 11 24z"
+                                    fill="#FBBC05"></path>
+                                <path
+                                    d="M24 10.75c3.233 0 6.13 1.113 8.415 3.29l6.305-6.305C34.907 4.18 29.935 2 24 2 15.402 2 7.96 6.93 4.34 14.117l7.342 5.698C13.418 14.612 18.276 10.75 24 10.75z"
+                                    fill="#EA4335"></path>
+                            </svg></a></div>
+                    <div class="name">Search</div>
+                </div>
+                <div class="sub-products">
+                    <div><a href="https://myaccount.google.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 48 48" height="48" width="48">
+                                <path
+                                    d="M7 7.409L23.999 2l16.999 5.409v16.226s0 10.818-17 21.635C7 34.453 7 23.635 7 23.635V7.409z"
+                                    fill="#4285F4"></path>
+                                <circle fill="#3367D6" cx="24" cy="24" r="10"></circle>
+                                <path
+                                    d="M32.24 29.667c-1.803-2.29-4.821-3.792-8.24-3.792-3.419 0-6.437 1.501-8.24 3.792A9.99 9.99 0 0 0 24 34a9.99 9.99 0 0 0 8.24-4.333zM24 24a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5z"
+                                    fill="#FFF"></path>
+                            </svg></a></div>
+                    <div class="name">Account</div>
+                </div>
+                <div class="sub-products">
+                    <div><a href="https://mail.google.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 48 48" height="48" width="48">
+                                <path d="M46 15.5V37a3 3 0 01-3 3h-7V16l10-.5z" fill="#34A853"></path>
+                                <path d="M2 15.5l10 .5v24H5a3 3 0 01-3-3V15.5z" fill="#4285F4"></path>
+                                <path fill="#EA4335" d="M36 10l4 10-16 12L8 20l4-10 12 9z"></path>
+                                <path d="M38.8 7.9a4.5 4.5 0 017.2 3.6v4L36 23V10l2.8-2.1z" fill="#FBBC05"></path>
+                                <path d="M9.2 7.9L12 10v13L2 15.5v-4a4.5 4.5 0 017.2-3.6z" fill="#C5221F"></path>
+                            </svg></a></div>
+                    <div class="name">Gmail</div>
+                </div>
+                <div class="sub-products">
+                    <div><a href="https://drive.google.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 48 48" height="48" width="48">
+                                <path
+                                    d="M9.92 25l13 13-13.175 4.686A4 4 0 017.833 41l-.226-.393-4.412-7.643-.093-.173a4 4 0 01-.382-2.362L9.92 25z"
+                                    fill="#1967D2"></path>
+                                <path
+                                    d="M39.08 24l6.207 6.487A4 4 0 0144.784 33l-4.62 8a3.999 3.999 0 01-1.763 1.62L25.08 38l14-14z"
+                                    fill="#EA4335"></path>
+                                <path
+                                    d="M28.618 5c.844 0 1.649.265 2.314.737L31 17H17l.066-11.262A3.999 3.999 0 0119.381 5h9.237z"
+                                    fill="#188038"></path>
+                                <path
+                                    d="M32.083 7l12.701 22c.358.619.536 1.31.536 2H32.082L24 17l6.619-11.464A3.997 3.997 0 0132.083 7z"
+                                    fill="#FBBC05"></path>
+                                <path
+                                    d="M32.082 31l6.62 11.464A3.997 3.997 0 0136.7 43H11.297a4 4 0 01-1.999-.535l6.62-11.466h16.164z"
+                                    fill="#4285F4"></path>
+                                <path
+                                    d="M17.38 5.536L24 17l-8.082 14H2.678a4 4 0 01.514-1.96L15.924 6.989l.11-.18c.348-.53.812-.963 1.347-1.272z"
+                                    fill="#34A853"></path>
+                            </svg></a></div>
+                    <div class="name">Drive</div>
+                </div>
+            </div>
+            <!-- <iframe src="main/cal/Cal.html" style="width: 100%; height: calc(90% - 40px); border: none;"></iframe> -->
+        </div>
+    </div>
+    <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+    <!-- To-Do List Section -->
+
+    <div class="todo-container">
+        <h2 class="head3">To-Do List</h2>
+        <hr>
+        <div class="send-area">
+            <input type="text" id="new-task" placeholder=" Add New task">
+            <div id="add-task-btn"><img src="assets/add.svg" alt="add"></div>
+        </div>
+        <ul id="todo-list"></ul>
+        <!-- To-Do list comes after input -->
+    </div>
+    <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+    <!-- Chrome App Launcher -->
+    <button class="cal-btn" id="cal-btn"><img src="assets/Chrome App Launcher.png" alt="CAL"
+            title="Chrome App Launcher"></button>
+
+    <!-- Overlay -->
+    <div id="cal-overlay" class="overlay"></div>
+
+    <!-- Popup -->
+    <div id="cal-popup" class="cal-popup">
+        <div class="cal-header">
+            <div class="cal-img">
+                <img src="assets/Chrome App Launcher.png" class="cal-img">
+            </div>
+            <div class="powered6">
+                <p>Powered by <br> <span
+                        style="color:red; background: #6e6e6e; border-bottom: 0.7px dotted red;">Chrom</span><span
+                        style="color: green;background: #6e6e6e; border-bottom: 0.7px dotted green;">eApp</span><span
+                        style="color: yellow;background: #6e6e6e; border-bottom: 0.7px dotted yellow;">Laun</span><span
+                        style="color: blue;background: #6e6e6e; border-bottom: 0.7px dotted blue;">cher</span></p>
+            </div>
+
+            <button class="cal-close" id="cal-close"><img src="assets/clse.svg" title="Close" alt="close"></button>
+        </div>
+        <iframe src="main/cal/Cal.html" style="width: 100%; height: calc(90% - 40px); border: none;"></iframe>
+    </div>
+
+    <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+
+    <button class="ico-btn" id="ico-btn" title="Icon Module By MRc"><a href="main/modul/icons.htm" target="_blank"><img
+                src="main/modul/fav.ico" alt="MRc" title="Material Icons By MRc"></a></button>
+    <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+    <!-- Ai/MRI Chatbot-->
+    <button class="mri-btn" id="mri-btn" title="MRi"><img src="assets/mri.png" alt="🤖"
+            title="MRi AI Assitant"></button>
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="mri-header">
+            <div>
+                <img src="assets/mri.png" class="headimg">
+            </div>
+            <div class="powered">
+                <p>Powered by Google Gemini</p>
+                <div class="powered2">
+                    <a href="https://gemini.google.com/" target="_blank"><img src="assets/gemini.svg" alt=""></a>
+                </div>
+            </div>
+            <button class="mri-close" id="mri-close"><img src="assets/clse.svg" alt=""></button>
+        </div>
+        <hr>
+        <iframe src="main/MRi/MRi.html" style="width: 100%; height: calc(100% - 40px); border: none;"></iframe>
+    </div>
+    <!--_=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=__=_-->
+    <!-- Link to External Script (placed at the bottom for proper loading) -->
+    <script src="main/page/page.js"></script>
+    <script src="main/MRi/MRi.js"></script>
+    <script src="main/page/popup.js"></script>
+</body>
+
+</html>
